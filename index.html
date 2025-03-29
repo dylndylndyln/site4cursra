@@ -3,36 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Sample Page</title>
+    <title>City of Almaty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Almaty!</h1>
     </header>
-    
-    <main>
-        <section id="about">
-            <h2>About This Page</h2>
-            <p>This is a simple webpage demonstrating semantic HTML elements.</p>
-        </section>
-        
-        <section id="gallery">
-            <h2>Image Gallery</h2>
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image 1">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image 2">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image 3">
-        </section>
-    </main>
-    
+
+    <video loop autoplay>
+     <source src="https://www.youtube.com/watch?v=Ru5fiZDlQq8" type="video/mp4" />
+    </video>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About the City</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#review">Leave your review!</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2><p style="text-align: center;">About Almaty</p></h2>
+        <p style="text-align: center;">
+        <img src="https://liter.kz/cache/imagine/1200/uploads/news/2020/11/20/almaty-gorod-foto.jpg" style="text-align: center;" width="500" height="320px" border="5px" />
+        </p>
+        <header><p class="center">Almaty is not just a place on the map but a living history, carefully preserving its traditions woven into the majestic mountains of the Zailiysky Alatau. The capital of Kazakhstan until 1997, Almaty embodies a blend of cultural richness and modern spirit.
+        The unique character of the city is felt in every street, reflecting the diversity of ethnic groups and historical periods. Modern skyscrapers surrounded by snow-capped mountains coexist with ancient architectural monuments, creating a unique urban landscape.</p></header>
+    </section>
+
+    <section id="history">
+        <h2><p style="text-align: center;">City History</p></h2>
+        <p style="text-align: center;">
+        <img src="https://www.advantour.com/img/kazakhstan/almaty/history/almaty-club-natsmen.jpg" style="text-align: center;" width="500" height="320px" border="5px" />
+        </p>
+        <header><p class="center">Medieval Almaty was a crossroads of trade routes connecting East and West along the Silk Road. This city became a cultural melting pot where ideas and traditions of various peoples merged. Over time, Almaty experienced different eras, preserving traces of historical events in its architecture and customs.
+        In the 20th century, the city became part of Soviet history, transforming from a Kazakh cultural center into an industrial hub. Today, Almaty is a modern metropolis with a highly developed infrastructure, yet its streets and monuments remain living witnesses of a rich history that it proudly carries into the future.</p></header>
+    </section>
+
+    <section id="attractions">
+        <h2><p style="text-align: center;">Attractions</p></h2>
+        <p style="text-align: center;">
+        <img src="https://sxodim.com/uploads/posts/2023/04/03/optimized/e46ca65832e60bfe3959b6c3864311f6_1400x790-q-85.jpg" style="text-align: center;" width="500" height="320px" border="5px" />
+        </p>
+        <header><p class="center">One of the city's symbols is the majestic Kok-Tobe, which offers a breathtaking panoramic view of Almaty. Nearby lies the picturesque First President Park, where history meets nature in perfect harmony.
+        Exploring the city's central district, you can see the building of Kazakh National University, the majestic Ak-Orda Palace, and the modern Central House of Official Events—historical and architectural masterpieces that showcase the city's cultural pulse.
+        The city zoo is a vibrant place where children and adults can explore the fascinating world of wildlife, while the grand gates of the Green Bazaar invite visitors on an exciting shopping journey.
+        From museums and theaters to well-maintained parks and modern architectural landmarks, Almaty offers an unforgettable experience of discovering its unique attractions.</p></header>
+    </section>
+
+    <section id="review" div style="text-align: center;">
+        <h2>Leave your review!</h2>
+        <form action="" method="POST" name="test" onsubmit="valid()" id="form"> 
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" id="name" /><br />
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" id="password" /><br />
+        <label for="RePassword">Confirm Password</label>
+        <input type="password" name="RePassword" placeholder="Enter password" id="RePassword" /><br />
+        <label for="gender">Select Gender</label>
+        <input type="radio" name="state" id="male" value="Male" /><label for="male">Male</label><br /> 
+        <input type="radio" name="state" id="female" value="Female" /><label for="female">Female</label><br />
+        <form action="" method="post">
+        <p><b>Your comment or review</b></p>
+        <textarea name="text"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+
     <footer>
-        <p>&copy; 2025 My Website | <a href="https://www.example.com" target="_blank">Visit Example</a></p>
+        <p>&copy; 2023, City of Almaty</p>
     </footer>
+
 </body>
 </html>
